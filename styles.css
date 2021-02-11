@@ -76,7 +76,8 @@ h1 {
     top: 7.5rem;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    z-index: 2;
 }
 
 .home-tags {
@@ -84,13 +85,14 @@ h1 {
     top: 9.5rem;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    z-index: 2;
 }
 
 .home-image {
     position: relative;
     bottom: 15%;
-    z-index: -1;
+    z-index: 1;
     width: 100%;
 }
 
@@ -107,7 +109,7 @@ h1 {
     justify-content: space-around;
     text-transform: uppercase;
     text-align: center;
-    z-index: -2;
+    /* z-index: -2; */
 } 
 
 .portfolio-title {
@@ -121,7 +123,6 @@ h1 {
         color: black;
 }
 .card {
-    /* background-color: aqua; */
     text-transform: uppercase;
     list-style: none;
 }
@@ -131,7 +132,6 @@ h1 {
 }
 .card-text {
     position: absolute;
-    /* background-color: tomato; */
     bottom: 18rem;
     left: 50%;
     transform: translate(-50%, -50%);
