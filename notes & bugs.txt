@@ -1,0 +1,62 @@
+
+Project #2 - Photography Website Portfolio.
+-------------------------------------------
+
+Home page.
+----------
+
+- Full first page is not yet done.
+
+#todo
+- Finish:
+> homepage.
+> about section.
+> contact section.
+
+- Once page is done tweek:
+> navbar needs to transition into light grey background as the user scrolls down into the Portfolio section.
+> this also needs to revert back to no background when scrolling back up.
+
+> card hover animation, after hover transition delay needed!
+
+> 
+
+
+- Make Website Fully Responsive:
+> average size mobile.
+> average size tablet.
+> small monitor.
+> average monitor.
+> large monitor.
+
+
+#bug
+- smaller screen zoom @ 100% results in no more spacing between portfolio cards.
+> issue noted on 13 inch displays.
+> anything over 14 inches appears fine.
+
+
+
+
+Portfolio Specific Pages
+------------------------
+
+- These will the pages that load as small galleries displaying images for said category.
+
+#todo
+- Create pages:
+> Weddings.
+> Family.
+> Pets.
+
+
+- Make Website Fully Responsive:
+> average size mobile.
+> average size tablet.
+> small monitor.
+> average monitor.
+> large monitor.
+
+
+#bug
+-

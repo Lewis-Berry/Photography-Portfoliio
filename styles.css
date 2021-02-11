@@ -1,0 +1,161 @@
+
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 3.5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* NAVBAR */
+.navbar-links {
+    min-height: 6vh;    
+}
+
+.navbar-title {    
+    /* background-color: gray; */
+    z-index: 1000;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    /* position: absolute;  */
+    position: fixed;
+    /* check positioning */
+}
+
+.nav-items a {
+    color: white;
+    font-size: 0.6rem;
+    list-style: none;
+}
+
+li {
+    position: relative;
+    padding: 1rem 2rem;
+    display: inline-block;
+}
+
+
+/* HOME SECTION */
+.home {
+    height: 100vh;
+    /* background-color: lightblue; */
+}
+
+.home-container {
+    position: relative;
+    color: white;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 2rem;
+    letter-spacing: 6px;
+    font-weight: 500;
+}
+
+.home-title {
+    position: absolute;
+    top: 8rem;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.home-tags {
+    position: absolute;
+    top: 10rem;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.home-image {
+    position: relative;
+    bottom: 20%;
+    z-index: -1;
+    width: 100%;
+}
+
+/* PORTFOLIO SECTION */
+
+.portfolio-container {
+    position: relative;
+    background: white;
+}
+
+.portfolio {
+    height: 90vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-transform: uppercase;
+    text-align: center;
+} 
+.cards {
+        display: flex;
+        justify-content: space-between;
+        color: black;
+}
+.card {
+    /* background-color: aqua; */
+    text-transform: uppercase;
+    list-style: none;
+}
+.card-overlay {
+    position: relative;
+    color: black;
+}
+.card-text {
+    position: absolute;
+    /* background-color: tomato; */
+    bottom: 18rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card img {
+    height: 38rem;
+}
+
+.card h4 {
+    visibility: hidden;
+    font-weight: 200;
+}
+.card img:hover {
+    opacity: 20%;
+    transition: 0.5s all;
+}
+
+.card:hover h4 {
+    visibility: visible;
+    transition: 1s all;
+}
+
+/* ABOUT SECTION */
+
+.about-container {
+    height: 100vh;
+    width: 55%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+/* .about .about-text{
+    display: flex;
+    justify-content: space-between;    
+} */
+
+.about-image {
+    height: 35rem;
+}
