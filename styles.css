@@ -31,10 +31,19 @@ a {
     /* check positioning */
 }
 
+.scroll {
+    background-color: #9ba4b4;
+     /* #cdd0cb;*/
+}
+
 .nav-items a {
     color: white;
     font-size: 0.6rem;
     list-style: none;
+}
+
+.nav-items a:hover {
+    border-bottom: 1px solid;
 }
 
 li {
@@ -64,7 +73,7 @@ h1 {
 
 .home-title {
     position: absolute;
-    top: 8rem;
+    top: 7.5rem;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
@@ -72,7 +81,7 @@ h1 {
 
 .home-tags {
     position: absolute;
-    top: 10rem;
+    top: 9.5rem;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
@@ -80,7 +89,7 @@ h1 {
 
 .home-image {
     position: relative;
-    bottom: 20%;
+    bottom: 15%;
     z-index: -1;
     width: 100%;
 }
@@ -90,10 +99,7 @@ h1 {
 .portfolio-container {
     position: relative;
     background: white;
-}
-
-.portfolio {
-    height: 90vh;
+    height: 100vh;
     width: 80%;
     margin: auto;
     display: flex;
@@ -101,7 +107,14 @@ h1 {
     justify-content: space-around;
     text-transform: uppercase;
     text-align: center;
+    z-index: -2;
 } 
+
+.portfolio-title {
+    font-size: 0.8rem;
+    padding-top: 4rem;
+}
+
 .cards {
         display: flex;
         justify-content: space-between;
@@ -124,38 +137,116 @@ h1 {
     transform: translate(-50%, -50%);
 }
 .card img {
-    height: 38rem;
+    /* height: 36rem; */
+    /* width: 350px;
+    height: 500px; */
+    width: 95%;
+    height: 100%;
 }
 
 .card h4 {
     visibility: hidden;
     font-weight: 200;
+    transition: 0.2s all;
+}
+.card:hover h4 {
+    visibility: visible;
+    /* transition: 1s all; */
+}
+.card img {
+    opacity: 100%;
+    transition: 1s all;
 }
 .card img:hover {
     opacity: 20%;
     transition: 0.5s all;
 }
 
-.card:hover h4 {
-    visibility: visible;
-    transition: 1s all;
-}
+
 
 /* ABOUT SECTION */
 
 .about-container {
     height: 100vh;
     width: 55%;
-    margin: auto;
+    margin: 50px auto;
     display: flex;
     flex-direction: column;
+    background-color: lightcoral;
     /* justify-content: space-between; */
 }
-/* .about .about-text{
-    display: flex;
-    justify-content: space-between;    
-} */
+
+.about-title {
+    text-align: center;
+    padding-bottom: 50px;
+    text-transform: uppercase;
+    padding-top: 6rem;
+}
 
 .about-image {
     height: 35rem;
+    /* alter this value from rem to %, see card images!! */
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+}
+
+.about p {
+    /* background-color: lightseagreen; */
+    padding: 20px 50px;
+}
+
+
+
+/* CONTACT SECTION */
+
+.contact-container {
+    height: 90vh;
+    /* width: 55%; */
+    margin: 50px auto 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #9ba4b4;
+}
+
+.contact-title {
+    text-align: center;
+    /* text-decoration: underline wavy; revisit underline styling, make variable */
+    /* margin-top: 10px; */
+    padding-top: 4rem;
+    text-transform: uppercase;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 55%;
+    margin-top: 50px;
+    margin-left: 21rem;
+    padding-top: 30px;
+    background-color: lightskyblue;
+}
+
+.contact-detail {
+    display: flex;
+    flex-direction: column;
+    padding-top: 12rem;
+}
+
+.contact-image {
+    height: 35rem;
+    padding-left: 100px;
+}
+
+
+/* FOOTER */
+.footer {
+    background-color: #9ba4b4;;
+    text-align: right;
+    text-transform: uppercase;
+    padding: 20px;
+    font-size: 0.6rem;
 }

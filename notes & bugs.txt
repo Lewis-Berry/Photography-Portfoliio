@@ -8,33 +8,15 @@ Home page.
 - Full first page is not yet done.
 
 #todo
-- Finish:
-> homepage.
-> about section.
-> contact section.
 
-- Once page is done tweek:
-> navbar needs to transition into light grey background as the user scrolls down into the Portfolio section.
-> this also needs to revert back to no background when scrolling back up.
-
-> card hover animation, after hover transition delay needed!
-
-> 
-
-
-- Make Website Fully Responsive:
-> average size mobile.
-> average size tablet.
-> small monitor.
-> average monitor.
-> large monitor.
+- Tweek:
+> underline for section titles. 
 
 
 #bug
 - smaller screen zoom @ 100% results in no more spacing between portfolio cards.
-> issue noted on 13 inch displays.
-> anything over 14 inches appears fine.
-
+  > resolved for now by removal image height rem value.
+  > replaced with width: 95%;   &   height: 100%;
 
 
 

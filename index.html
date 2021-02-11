@@ -10,7 +10,7 @@
 <header>
     <!-- NAVBAR -->
     <nav class="navbar">
-        <div class="navbar-title">
+        <div id="navbar" class="navbar-title">
             <a href="">
                 <span id="bar1" class="bar"></span>
                 <span id="bar2" class="bar"></span>
@@ -18,9 +18,9 @@
             </a>
             <div class="navbar-links">
                 <ul>
-                    <li class="nav-items"><a href="portfolio">Portfolio</a></li>
-                    <li class="nav-items"><a href="about">About</a></li>
-                    <li class="nav-items"><a href="contact">Contact</a></li>
+                    <li class="nav-items"><a href="#portfolio">Portfolio</a></li>
+                    <li class="nav-items"><a href="#about">About</a></li>
+                    <li class="nav-items"><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -38,9 +38,11 @@
     </section>
 
         <!-- PORTFOLIO SECTION -->
-    <div class="portfolio-container">
-        <section id="portfolio" class="portfolio">
-            <h3>Portfolio</h3>
+    <section id="portfolio">
+         <div class="portfolio-container">
+            <div class="portfolio-title title">
+                <h3>Portfolio</h3>
+            </div>
             <div class="cards">
                 <div class="card card-1">
                     <a href="">
@@ -67,30 +69,47 @@
                     </a>
                 </div>
             </div>
-        </section>
-    </div>     
+         </div>
+    </section>
+    
 
     <!-- ABOUT SECTION -->
-    <div class="about-container">
-        <section id="about">
-            <div class="about-text">
+    <section id="about">
+        <div class="about-container">
+            <div class="about-title title">
                 <h4>About</h4>
             </div>
             <div class="about">
                 <img class="about-image" src="images/about.jpg" alt="about_image">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, deleniti?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolores at nostrum quia earum suscipit quibusdam ducimus id nisi! Maxime id labore maiores. Voluptatem facilis nam quis unde recusandae illum quas maxime sint, consectetur laudantium illo tempora praesentium debitis consequuntur. Soluta et tempore dolore. Vero, cum ad? Ullam ipsum consequatur non fuga enim in asperiores, provident tenetur explicabo iure nam.</p>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
 
     <!-- CONTACT SECTION -->
+    <section id="contact">
+        <div class="contact-container">
+            <div class="contact-title title">
+                <h4>Contact</h4>
+            </div>
+            <div class="contact">
+                <div class="contact-detail">
+                    <p>Artist Name</p>
+                    <p>artistemail@email.me</p>
+                    <p>555-555-5555</p>
+                </div>
+                <img class="contact-image" src="images/contact.jpg" alt="contact_image">
+            </div>
+        </div>
+    </section>
 
 
 
     </main>
-    <!-- <footer>
+    <footer class="footer">
         <p>Photos by Deerberry Photography </p>
-    </footer> -->
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
